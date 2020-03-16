@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 
-import logo from '../logo.svg';
+import logo from '../assets/images/logo.svg';
 import { Container, Title } from '../components/styled';
 
 const CustomContainer = styled(Container)`
@@ -45,6 +45,6 @@ class Introduction extends PureComponent {
       </CustomContainer>
     );
   }
-};
+}
 
 export default Introduction;

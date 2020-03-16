@@ -2,9 +2,21 @@ import React, { PureComponent } from 'react';
 import AwesomeSlider from 'react-awesome-slider/src/core';
 import AwesomeFrame from 'react-awesome-slider/src/components/react-awesome-frame';
 
-import Introduction from './slides/Introduction';
-import CoreConcepts from './slides/CoreConcepts';
-import Jsx from './slides/JSX';
+import {
+  AboutMe,
+  Bonus,
+  ConditionalRendering,
+  CoreConcepts,
+  Events,
+  Forms,
+  Introduction,
+  Jsx,
+  LazyLoading,
+  Lists,
+  StyledComponents,
+  TypeChecking,
+  TypeCheckingPart2
+} from './slides';
 
 import 'react-awesome-slider/dist/styles.css';
 import 'highlight.js/styles/default.css';
@@ -15,7 +27,6 @@ class App extends PureComponent {
   render() {
     return (
       <AwesomeSlider className='slider-container'
-                     bullets={false}
                      infinite={false}>
         <AwesomeFrame>
           <Introduction/>
@@ -27,6 +38,46 @@ class App extends PureComponent {
 
         <AwesomeFrame>
           <Jsx/>
+        </AwesomeFrame>
+
+        <AwesomeFrame>
+          <Events/>
+        </AwesomeFrame>
+
+        <AwesomeFrame>
+          <Forms/>
+        </AwesomeFrame>
+
+        <AwesomeFrame>
+          <Lists/>
+        </AwesomeFrame>
+
+        <AwesomeFrame>
+          <ConditionalRendering/>
+        </AwesomeFrame>
+
+        <AwesomeFrame>
+          <LazyLoading/>
+        </AwesomeFrame>
+
+        <AwesomeFrame>
+          <Bonus/>
+        </AwesomeFrame>
+
+        <AwesomeFrame>
+          <StyledComponents/>
+        </AwesomeFrame>
+
+        <AwesomeFrame>
+          <TypeChecking/>
+        </AwesomeFrame>
+
+        <AwesomeFrame>
+          <TypeCheckingPart2/>
+        </AwesomeFrame>
+
+        <AwesomeFrame>
+          <AboutMe/>
         </AwesomeFrame>
       </AwesomeSlider>
     );

@@ -20,8 +20,7 @@ const SnippetsContainer = styled.div`
   }
 `;
 
-const jsxCodeSnippet = `
-class HelloMessage extends React.Component {
+const jsxCodeSnippet = `class HelloMessage extends React.Component {
   render() {
     return (
       <div>
@@ -36,8 +35,7 @@ ReactDOM.render(
   document.getElementById('hello-example')
 );`;
 
-const nonJsxSnippet = `
-class HelloMessage extends React.Component {
+const nonJsxSnippet = `class HelloMessage extends React.Component {
   render() {
     return React.createElement(
       "div",

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { Container, Title } from '../components/styled';
 
-import logo from '../logo.svg';
+import logo from '../assets/images/logo.svg';
 
 const LogoImage = styled.img`
   height: 400px;
@@ -37,6 +37,6 @@ class CoreConcepts extends PureComponent {
       </Container>
     );
   }
-};
+}
 
 export default CoreConcepts;
